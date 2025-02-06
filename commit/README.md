@@ -4,10 +4,24 @@ https://github.com/JosephBean/Docs/tree/main/git
 
 ## git commit 명령어
 
-git commit -m “타입: 제목” ^ (엔터누르기)<br>
+git commit -m “Feat: 신규 RFID 인식 기능 추가(#123)” ^ (엔터누르기)<br>
 -m “” ^ (엔터누르기)<br>
--m “본문 내용 이렇게 씁니다.” (엔터누르기)<br>
+-m “신규 RFID 기능 인식 기능 추가.” (엔터누르기)<br>
+-m "- RFIDReader.java: 사용자 요건 사항으로 인한 RFID 인식 기능 추가" ^(엔터누르기)<br>
+-m “” ^ (엔터누르기)<br>
+-m “해결: #123” ^ (엔터누르기)<br>
 
+### Exmample of Full Commmit Message
+
+```
+Feat: 신규 RFID 인식 기능 추가(#123)
+
+신규 RFID 기능 인식 기능 추가
+  - RFIDReader.java: 사용자 요건 사항으로 인한 RFID 인식 기능 추가
+
+해결: #123
+```
+<br>
 
 ## git add 취소
 
@@ -105,16 +119,6 @@ Feat: 신규 RFID 인식 기능 추가
 참고: #222
 ```
 
-### Exmample of Full Commmit Message
-
-```
-Feat: 신규 RFID 인식 기능 추가(#123)
-
-신규 RFID 기능 인식 기능 추가
-  - RFIDReader.java: 사용자 요건 사항으로 인한 RFID 인식 기능 추가
-
-해결: #123
-```
 
 ## git 규칙 만드는 이유
   - **서로 무슨 작업을 했는지 한 눈에 보이지 않음.**
