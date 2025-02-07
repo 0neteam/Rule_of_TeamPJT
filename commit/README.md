@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/4254174d-ab04-498d-9f65-127e9c303845)# git 명령어 알고싶으면 여기 가서 보시고...
+# git 명령어 알고싶으면 여기 가서 보시고...
 
 https://github.com/JosephBean/Docs/tree/main/git
 
@@ -9,7 +9,7 @@ git commit -m “타입: branch명 내용요약” ^ <br>
 -m “무엇을, 왜 커밋했는지 작성” <br>
 
 
-### 출력되는 커밋 내용 예시
+### 출력되는 커밋 내용 예시 (전체 예시는 디스코드에 있음)
 ```
 기능추가: user 회원가입 기능 추가
 회원가입 기능 추가 완료 (무엇을, 왜 작성)
