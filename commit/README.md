@@ -1,27 +1,21 @@
-# git 명령어 알고싶으면 여기 가서 보시고...
+![image](https://github.com/user-attachments/assets/4254174d-ab04-498d-9f65-127e9c303845)# git 명령어 알고싶으면 여기 가서 보시고...
 
 https://github.com/JosephBean/Docs/tree/main/git
 
+
 ## git commit 명령어
 
-git commit -m “Feat: 신규 RFID 인식 기능 추가(#123)” ^ (엔터누르기)<br>
--m “” ^ (엔터누르기)<br>
--m “신규 RFID 기능 인식 기능 추가.” (엔터누르기)<br>
--m "- RFIDReader.java: 사용자 요건 사항으로 인한 RFID 인식 기능 추가" ^(엔터누르기)<br>
--m “” ^ (엔터누르기)<br>
--m “해결: #123” ^ (엔터누르기)<br>
+git commit -m “타입: branch명 내용요약” ^ <br>
+-m “무엇을, 왜 커밋했는지 작성” <br>
 
-### Exmample of Full Commmit Message
 
+### 출력되는 커밋 내용 예시
 ```
-Feat: 신규 RFID 인식 기능 추가(#123)
-
-신규 RFID 기능 인식 기능 추가
-  - RFIDReader.java: 사용자 요건 사항으로 인한 RFID 인식 기능 추가
-
-해결: #123
+기능추가: user 회원가입 기능 추가
+회원가입 기능 추가 완료 (무엇을, 왜 작성)
 ```
 <br>
+
 
 ## git add 취소
 
@@ -70,9 +64,16 @@ git reset --soft HEAD~1
 
 해당 커밋은 무엇에 대한 작업인지 키워드를 통해 표시합니다.
 
-<p align="center">
-  <img src="https://blog.kakaocdn.net/dn/cse5PQ/btskhB1fjW4/gwAcrvaJvIdtkyf3MsB3fK/img.png" height="390">
-<p>
+기능추가 : 새로운 기능 추가 커밋<br>
+버그수정 : 버그 수정<br>
+배포관련 : 빌드 관련 파일 수정<br>
+문서: 문서 추가, 수정, 삭제<br>
+코드수정 : 오타 등 간단한 수정 (로직 변경 X)<br>
+리팩토링 : 코드 리팩토링 (코드 가독성, 유지보수 등을 위한 구조 재조정, 기능은 동일)<br>
+테스트 : 테스트 코드 추가, 수정, 삭제 (로직 변경 X)<br>
+CI관련 : CI 관련 커밋<br>
+기타 : 기타 변경사항<br>
+
   
 ## 2.2 Subject
 커밋 메세지의 제목입니다.
@@ -83,12 +84,7 @@ git reset --soft HEAD~1
 - 제목과 본문은 한 줄 띄워 분리합니다.
 - 제목의 첫 글자는 반드시 대문자로 씁니다.
 - 이슈에 관련된 내용이라면 이슈 번호를 붙힙니다.
-
-### Example of Subject
-
-```
-Feat: 신규 RFID 인식 기능 추가
-```
+- 
 
 ## 2.3. Body
 커밋 메세지의 본문입니다. 
@@ -97,27 +93,6 @@ Feat: 신규 RFID 인식 기능 추가
 - 한 줄에 72자를 넘기면 안 됩니다.
 - 어떻게(how)보다 무엇(what), 왜(why)에 집중하여 내용을 작성합니다.
 - 설명뿐만 아니라 커밋의 이유를 작성할 때도 작성합니다.
-
-### Example of Subject
-```
-신규 RFID 기능 인식 기능 추가
-  - RFIDReader.java: 사용자 요건 사항으로 인한 RFID 인식 기능 추가
-```
-## 2.4. Footer
-커밋 메세지의 맺음말입니다. <s>딱히 이슈없다면 뭐..</s>
-
-- 선택 사항이므로 모든 커밋에 작성할 필요는 없습니다.
-- 이슈를 추적하기 위한 ID를 추가할 때 사용합니다.
-- 해결 - 해결한 이슈 ID
-- 관련 - 해당 커밋에 관련된 이슈 ID
-- 참고 - 참고할만한 이슈 ID
-
-### Example of Footer
-```
-해결: #123
-관련: #321
-참고: #222
-```
 
 
 ## git 규칙 만드는 이유
